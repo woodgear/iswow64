@@ -13,6 +13,4 @@ include = [
 ]
 
 [target.'cfg(windows)'.dependencies]
-winapi = "0.2.8"
-kernel32-sys = "0.2.2"
-
+winapi = {version = "0.3.7",features = ["wow64apiset","processthreadsapi","errhandlingapi"]}
